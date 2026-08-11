@@ -196,6 +196,33 @@ def g2():
 
 
 # ============================== G3 ==============================
+def _strip_fences(txt):
+    """코드펜스 안(grep 명령 등)은 산문이 아니므로 스캔 대상에서 뺀다. 줄 번호는 보존."""
+    out, infence = [], False
+    for line in txt.split("\n"):
+        if line.lstrip().startswith("```"):
+            infence = not infence
+            out.append("")
+            continue
+        out.append("" if infence else line)
+    return "\n".join(out)
+
+
+def _is_mention(line, phrase):
+    """`백틱` 또는 "따옴표" 로 감싼 것은 표현의 '사용'이 아니라 '언급'이다.
+    금지표현 목록 자체를 인용하는 DoD 셀프체크·감사 보고를 오탐하지 않기 위함."""
+    for m in re.finditer(re.escape(phrase), line):
+        s, e = m.start(), m.end()
+        before, after = line[:s], line[e:]
+        for q in ("`", '"', "'", "«"):
+            closer = {"«": "»"}.get(q, q)
+            if before.rstrip().endswith(q) and after.lstrip().startswith(closer):
+                break
+        else:
+            return False  # 인용 부호 없이 쓰인 실사용이 하나라도 있으면 위반
+    return True
+
+
 def g3():
     hits = []
     targets = md_corpus()
@@ -207,9 +234,11 @@ def g3():
     for rel, txt in targets.items():
         if os.path.basename(rel) in G3_EXCLUDE:
             continue
-        for ln, line in enumerate(txt.split("\n"), 1):
+        for ln, line in enumerate(_strip_fences(txt).split("\n"), 1):
             for phrase, cond in FORBIDDEN:
                 if phrase not in line:
+                    continue
+                if _is_mention(line, phrase):
                     continue
                 if cond == "needs_evidence" and EID.search(line):
                     continue

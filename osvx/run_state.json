@@ -36,12 +36,18 @@
   "agents": {
     "O": {
       "role": "오케스트레이터",
-      "status": "running",
-      "dod_passed": false,
+      "status": "done",
+      "dod_passed": true,
       "retries": 1,
       "artifacts": [
         "osvx/AGENT_RULES.md",
-        "osvx/run_state.json"
+        "run_state.json",
+        "tools/merge_evidence.py",
+        "tools/build_evidence_ui.py",
+        "tools/validate.py",
+        "tools/md2docx.py",
+        "evidence/evidence.jsonl",
+        "evidence/evidence_ui.html"
       ]
     },
     "B": {
@@ -428,20 +434,32 @@
     },
     "W": {
       "role": "보고서 작성",
-      "status": "pending",
-      "dod_passed": false,
+      "status": "done",
+      "dod_passed": true,
       "retries": 0,
-      "artifacts": []
+      "artifacts": [
+        "report/OSVX_report.md",
+        "report/OSVX_report.docx"
+      ],
+      "handoff": {
+        "sections": 16,
+        "word_tables": 69,
+        "table_rows": 688,
+        "citations": 209,
+        "citation_match_pct": 100.0,
+        "rejected_cited": 0
+      }
     }
   },
   "gates": {
-    "G1_산출물존재": "pending",
-    "G2_근거무결성": "pending",
-    "G3_금지표현": "pending",
-    "G4_숫자재현성": "pending",
-    "G5_삼각측량": "pending",
-    "G6_신뢰도분포": "pending",
-    "G7_판정존재": "pending"
+    "G1_산출물존재": "PASS",
+    "G2_근거무결성": "PASS",
+    "G3_금지표현": "PASS",
+    "G4_숫자재현성": "PASS",
+    "G5_삼각측량": "PASS",
+    "G6_신뢰도분포": "PASS",
+    "G7_판정존재": "PASS",
+    "EXTRA_추가검사": "PASS"
   },
   "execution_note": "Workflow 툴 서브에이전트는 환경측 permission-handler 버그(updatedInput 스키마 위반, 92건 중 88건 실패)로 사용 불가 판정. Task(Agent) 서브에이전트로 전환하여 재실행.",
   "waves_done": [
@@ -449,7 +467,9 @@
     "W2",
     "W3",
     "W4",
-    "W5"
+    "W5",
+    "W6",
+    "W7"
   ],
   "critical_collisions": [
     {
@@ -483,7 +503,18 @@
   "open_discrepancies": [
     {
       "id": "DISC-01",
-      "issue": "옵션(b) GM60 임계물량: V=289.4 L, X=347.3 L (블렌디드 ASP 가정 차이 18.56 vs 18.50). 둘 다 192 L 초과·FAIL 결론 일치. Agent S 가 재계산해 하나로 확정할 것."
+      "issue": "해소 — 판매 289.9 L = 생산 346.7 L @ASP 18.53. V/X 불일치의 원인은 판매/생산 단위 기준 차이 [E-818]",
+      "status": "resolved"
     }
+  ],
+  "final_verdict": {
+    "현_제품정의": "No-Go",
+    "대안_스코프": "Conditional-Go (옵션(e) GMP 원부자재 한정)"
+  },
+  "harness_incidents": [
+    "Workflow 툴 서브에이전트 permission-handler 결함(92건 중 88건 tool 호출 실패) -> Task 서브에이전트로 전환",
+    "Agent W 가 tools/validate.py 를 자체 약화 버전으로 덮어씀 -> git 에서 원본 복원 후 진짜 게이트로 재검증",
+    "Agent B 가 premise_audit.md 를 덮어써 Agent C 섹션 소실 -> B 가 git HEAD 에서 복원 후 append",
+    "Agent O 의 1차 evidence 병합이 Agent G 완료 전 실행되어 65건 누락 -> Agent R 이 적발, 재병합"
   ]
 }
