@@ -46,10 +46,40 @@
     },
     "B": {
       "role": "규제·정책 드라이버 & 제품등급",
-      "status": "pending",
-      "dod_passed": false,
+      "status": "done",
+      "dod_passed": true,
       "retries": 0,
-      "artifacts": []
+      "artifacts": [
+        "docs/B_plan.md",
+        "docs/B_regulatory.md",
+        "docs/premise_audit.md",
+        "evidence/evidence_B.jsonl"
+      ],
+      "web_calls": 105,
+      "evidence_count": 79,
+      "handoff": {
+        "nam_ramp": {
+          "conservative": {
+            "2026": 4,
+            "2030": 12,
+            "2035": 25
+          },
+          "base": {
+            "2026": 8,
+            "2030": 25,
+            "2035": 45
+          },
+          "aggressive": {
+            "2026": 12,
+            "2030": 40,
+            "2035": 65
+          }
+        },
+        "grade_verdict": "RUO (ISO 20399 준거 GMP-ready RUO), 2차 2029~ GMP, 3차 2033~ ATMP",
+        "gmp_premium_multiple": 1.85,
+        "clinical_timing_year": 2033,
+        "critical_finding": "규제는 defined matrix 수요를 강제하지 않는다. ISTAND organoid 0건, EU 로드맵이 ATMP 명시 제외, EU ATMP GMP 7.13 이 research grade 명시 인정. 2026~2032 매출은 전액 RUO/NAM/PDO."
+      }
     },
     "C": {
       "role": "경쟁·공급자 랜드스케이프 & 가격",
@@ -179,5 +209,8 @@
     "G6_신뢰도분포": "pending",
     "G7_판정존재": "pending"
   },
-  "execution_note": "Workflow 툴 서브에이전트는 환경측 permission-handler 버그(updatedInput 스키마 위반, 92건 중 88건 실패)로 사용 불가 판정. Task(Agent) 서브에이전트로 전환하여 재실행."
+  "execution_note": "Workflow 툴 서브에이전트는 환경측 permission-handler 버그(updatedInput 스키마 위반, 92건 중 88건 실패)로 사용 불가 판정. Task(Agent) 서브에이전트로 전환하여 재실행.",
+  "waves_done": [
+    "W1"
+  ]
 }
