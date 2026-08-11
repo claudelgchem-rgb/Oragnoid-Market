@@ -387,10 +387,44 @@
     },
     "S": {
       "role": "통합 재무모델 & Go/No-Go",
-      "status": "pending",
-      "dod_passed": false,
+      "status": "done",
+      "dod_passed": true,
       "retries": 0,
-      "artifacts": []
+      "artifacts": [
+        "docs/S_plan.md",
+        "docs/S_synthesis.md",
+        "model/finance_model.py",
+        "model/OSVX_model.xlsx",
+        "data/finance_output.csv",
+        "evidence/evidence_S.jsonl"
+      ],
+      "evidence_count": 39,
+      "handoff": {
+        "verdict_current_definition": "No-Go",
+        "verdict_alternative_scope": "Conditional-Go (옵션(e) GMP 원부자재 한정)",
+        "NPV_usd": -14069419,
+        "WACC_pct": 8.66,
+        "IRR": "미산출(전 기간 FCF 음수)",
+        "payback": "3시나리오 전부 미도달",
+        "TAM_2030_usd": 89200000,
+        "SAM_2030_usd": 5620000,
+        "SOM_2030_usd": 454332,
+        "SOM_2030_sales_L": 19.76,
+        "GM_2030_pct": -114.9,
+        "GM60_threshold_sales_L": 209.5,
+        "gates": {
+          "SAM_2030": "FAIL",
+          "SOM_2030": "FAIL",
+          "GM": "FAIL",
+          "Payback": "FAIL",
+          "FTO": "PASS(중)"
+        },
+        "DISC-01_resolved": "판매 289.9 L = 생산 346.7 L @ASP 18.53 — V/X 불일치는 판매/생산 단위 기준 차이",
+        "KC1_option_value_usd": 12213558,
+        "action_90d_total_usd": 387000,
+        "xlsx_sheets": 8,
+        "xlsx_live_formulas": 2237
+      }
     },
     "W": {
       "role": "보고서 작성",
@@ -414,7 +448,8 @@
     "W1",
     "W2",
     "W3",
-    "W4"
+    "W4",
+    "W5"
   ],
   "critical_collisions": [
     {
