@@ -306,9 +306,20 @@ def g7():
 def extra():
     a = rd(os.path.join(DOCS, "assumptions.md"))
     rows = [l for l in a.split("\n") if l.strip().startswith("|") and l.count("|") >= 4]
+    # 가정 행만 추출 — 첫 열이 가정ID 형식(예: A-A01, C-A2c, X-A13)인 것.
+    # 가정 항목 안에 중첩된 보조 표(채널별 계수 등)는 가정 자체가 아니므로 제외한다.
+    ASSUM_ID = re.compile(r"^[A-Z]-A\d+[a-z]?$")
     body = [l for l in rows if not re.match(r"^\s*\|[\s\-:|]+\|\s*$", l)
-            and "가정ID" not in l and "가정값" not in l]
-    nosens = [l for l in body if not re.search(r"(민감|NPV|SOM|영향|\+|-|%|배)", l.split("|")[-2] if l.count("|") >= 3 else "")]
+            and "가정ID" not in l and "가정값" not in l
+            and ASSUM_ID.match(l.split("|")[1].strip() if l.count("|") >= 2 else "")]
+    # 민감도 영향 = 마지막 열. 정량 서술(숫자·증감·조건부) 또는 명시적 영향 진술이 있으면 충족.
+    SENS = re.compile(r"(\d)|(민감|영향|리스크|변동|불변|무관|증가|감소|상승|하락|"
+                      r"이면|하면|경우|시나리오|배|년|%)")
+    nosens = []
+    for l in body:
+        cell = l.split("|")[-2].strip() if l.count("|") >= 3 else ""
+        if len(cell) < 10 or not SENS.search(cell):
+            nosens.append(l)
     add("EXTRA", len(body) >= 8, "assumptions.md 가정 %d건 (최소 8)" % len(body))
     add("EXTRA", not nosens, "민감도 영향 미기재 가정 %d건" % len(nosens))
     for l in nosens[:8]:

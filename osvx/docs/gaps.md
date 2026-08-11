@@ -28,8 +28,38 @@ Matrigel 로트 편차는 **에디토리얼 수준의 논쟁 사안이 아니라
 - Frontiers Cell Neurosci 2024 리뷰의 *"...resulted in a higher variability and lower reproducibility"* [E-217]
 이 대체 근거군의 정성적 설득력은 에디토리얼 1건 대비 **동등 이상**(오차범위: 마케팅 인용가치 −20% ~ +10%)으로 평가한다. **후속 조사 불필요 — 본 갭은 산출물에 영향을 주지 않는다.**
 
-### GAP-D-02 — Matrigel 2개 로트 MS 비교 "배치 간 단백질 동정 유사도 53%"의 1차 출처 미확인
-검색 요약 단계에서 제시된 수치이나, 지목된 후보 문헌(Wolff & Hendrix 2025, PMC12713094)을 직접 fetch하여 확인한 결과 **해당 수치가 본문에 없음**을 검증했다(별도 쿼리 `"53%" batch-to-batch similarity Matrigel protein identification mass spectrometry two lots` 재검색에서도 1차 출처 미발견). **URL 날조를 피하기 위해 본 수치는 evidence 및 본문에서 전면 배제**했다. 대체 근거: 조성 편차는 프로테옴 종수 [E-200][E-201], 단백질 농도 스펙 폭 [E-203], 강성 편차 [E-205]로 정량화했으며 결론에 영향 없음.
+### GAP-D-02 — Matrigel 2개 로트 MS 비교 "배치 간 단백질 동정 유사도 53%"의 1차 출처 부재 (확정)
+*(Agent D 최초 등재 → Agent O 가 4요소 보강 및 부재 확정, 2026-08-11)*
+
+- **① 시도한 검색 쿼리 (6개)**
+  1. `"53%" batch-to-batch similarity Matrigel protein identification mass spectrometry two lots` (Agent D)
+  2. `Matrigel two lots mass spectrometry protein identification overlap percentage batch comparison proteomics`
+  3. `Hughes Postovit Lajoie 2010 Matrigel complex protein mixture proteomics 1851 proteins lot variation`
+  4. `"basement membrane extract" OR Matrigel different lots label-free proteomic quantitative comparison batch variability study`
+  5. `Matrigel batch-to-batch variability proteomic` (Agent D 조사 A)
+  6. `Matrigel composition mass spectrometry 1851 proteins` (Agent D 조사 A)
+
+- **② 확인한 소스 (10개)**
+  1. Wolff & Hendrix 2025, "Rethinking Matrigel", PMC12713094 — 본문에 해당 수치 없음 (Agent D 직접 fetch 확인)
+  2. Hughes CS, Postovit LM, Lajoie GA. *Proteomics* 2010;10:1886–1890, DOI 10.1002/pmic.200900758 — 조성 분석이며 **로트 간 중첩률 미보고**
+  3. Mass Spectrometry–based Proteomic Analysis of the Matrix Microenvironment in Pluripotent Stem Cell Culture, PMC3518136 — 원문 직접 확인
+  4. In-Depth Comparison of Matrigel Dissolving Methods on Proteomic Profiling of Organoids, PMC8733271
+  5. *Nature Reviews Materials* "Synthetic alternatives to Matrigel" (s41578-020-0199-8)
+  6. MDPI *Biomedicines* 14(2):485 합성 ECM 리뷰
+  7. bioRxiv 2025.02.28.640825 engineered BM mimetic hydrogels
+  8. ScienceDirect Topics — Matrigel overview
+  9. Semantic Scholar / UWO IR 의 Hughes 2010 서지 레코드
+  10. ResearchGate Hughes 2010 전문 페이지
+
+- **③ 왜 존재하지 않는지에 대한 판단**
+  **수치의 기원을 특정했다.** PMC3518136 원문에는 다음 문장이 있다: *"A comparison of the previously acquired commercial Matrigel™ dataset with gene ontology filtered conditioned Matrigel™ datasets revealed that **62%, 55%, and 50%** of proteins are identified in both matrices."*
+  이 62/55/50% 는 **상용 Matrigel 2개 로트 간 비교가 아니라, 상용 Matrigel 대 세포로 conditioning 한 Matrigel 의 비교이며, 세 개의 서로 다른 세포주(H9 hESC / CA1 hESC / BJ-1D hiPSC)에 대한 값**이다. 세 값의 평균이 55.7%, 중앙값이 55% 로 유포된 "53%" 와 근접하다.
+  → **"로트 간 유사도 53%"는 이 문장을 로트 비교로 오독한 결과일 가능성이 높다.** 상용 Matrigel 서로 다른 로트를 head-to-head MS 로 비교해 중첩률을 보고한 피어리뷰 논문은 10개 소스 조사에서 확인되지 않았다. 문헌은 로트 간 편차를 **정성적으로만** 기술하거나(*"Variations in the mechanical and biochemical properties within a single batch of Matrigel — and between batches — have led to uncertainty"*), 조성 총량(2,000+ 단백질 / 14,000+ 펩타이드)만 보고한다. 제조사가 로트별 프로테옴 데이터를 공개하지 않고 학계도 로트를 구매·비교할 유인이 낮아 이런 연구가 부재하는 것으로 판단한다.
+
+- **④ 대체 추정치와 오차범위**
+  로트 간 단백질 동정 중첩률을 **직접 인용하지 않는다.** 대신 검증된 대체 지표로 조성 편차를 정량화한다: 프로테옴 종수 [E-200][E-201], 단백질 농도 스펙 폭 [E-203], 강성 G' 편차 CV 18.6% [E-205], Corning 앱노트 기반 G' 9.1→288.2 Pa 복원 [E-204-R].
+  굳이 중첩률의 추정 밴드가 필요하다면 **50~62%(점추정 55%, 오차 ±7%p)** 를 쓰되, 이는 **로트 간이 아니라 조건 간(conditioned vs commercial) 값의 전용**이므로 상한 성격이며 반드시 그 사실을 병기해야 한다.
+  **사업 영향: 없음.** 본 수치는 evidence 및 전 본문에서 배제되었고, "Lot 편차가 실재한다"는 결론은 [E-203][E-205][E-204-R] 만으로 독립 성립한다.
 
 ## [B] 미해결 갭 (Agent B, 2026-08-11)
 
