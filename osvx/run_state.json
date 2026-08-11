@@ -270,17 +270,90 @@
     },
     "R": {
       "role": "근거 신뢰도 독립 검증",
-      "status": "pending",
-      "dod_passed": false,
+      "status": "done",
+      "dod_passed": true,
       "retries": 0,
-      "artifacts": []
+      "artifacts": [
+        "docs/R_plan.md",
+        "docs/R_credibility.md",
+        "evidence/evidence_verified.jsonl",
+        "evidence/evidence_rejected.jsonl"
+      ],
+      "web_calls": 93,
+      "evidence_count": 425,
+      "handoff": {
+        "verified_records": 118,
+        "source_text_checked": 68,
+        "rejected": 21,
+        "tier_upgrades": 43,
+        "tier_downgrades": 75,
+        "url_success_rate": 83.9,
+        "scorecard": {
+          "시장규모": {
+            "T1": 39.4,
+            "하": 29.6,
+            "판정": "FAIL"
+          },
+          "가격ASP": {
+            "T1": 48.5,
+            "하": 10.9,
+            "판정": "PASS"
+          },
+          "COGS_GM": {
+            "T1": 37.1,
+            "하": 24.3,
+            "판정": "FAIL"
+          },
+          "규제타이밍": {
+            "T1": 78.7,
+            "하": 6.4,
+            "판정": "PASS"
+          },
+          "FTO": {
+            "T1": 89.2,
+            "하": 6.8,
+            "판정": "PASS"
+          },
+          "전환장벽": {
+            "T1": 62.7,
+            "하": 5.3,
+            "판정": "PASS"
+          }
+        },
+        "critical_corrections": [
+          "유통마진 35.9% -> 실측 69.0%",
+          "E-424 COGS 기둥 숫자 원문 부재",
+          "EU 로드맵 URL 오타로 규제결론 7건 미검증",
+          "FTO 0건이 검색 파라미터 민감(플래그 변경 시 2건)",
+          "추정 40건 중 33건이 T1/T2 로 승격되어 있었음"
+        ]
+      }
     },
     "V": {
       "role": "내부 정합성·완결성 감사",
-      "status": "pending",
-      "dod_passed": false,
+      "status": "done",
+      "dod_passed": true,
       "retries": 0,
-      "artifacts": []
+      "artifacts": [
+        "docs/V_plan.md",
+        "docs/V_audit.md"
+      ],
+      "handoff": {
+        "contradictions": 24,
+        "overconfidence_fixes": 14,
+        "forbidden_expr": 1,
+        "logic_leaps": 8,
+        "correction_items": 26,
+        "severity_high": 10,
+        "COL-01": "비정합(상) — E 의 Payback 램프가 A 의 SOM 의 19.4배, E 2030 판매 418 L 이 A 의 SAM_adjusted 전체 296.5 L 를 1.41배 초과",
+        "COL-02": "전제 일관, 확률 처리 비정합(상) — A/G 는 라미닌 리스크를 x0.60 선형, E 는 0% 로 비대칭 처리",
+        "COL-03": "제품 규격 비정합(상) — F 회피규격 G'>1.5 kPa 를 E OM-S 와 G 강스템 SKU 가 한국에서 위반",
+        "V-01_payback": "E 의 payback_year 2030 무효 — A 의 SOM 대입 시 2035년까지 미도달, 누적 FCF -14.45M",
+        "V-04_option_b": "G 옵션(b) GM60 PASS(2028) 는 FAIL — 실제 55.7%, 블렌디드 ASP 18.56 로 임계 289.4 L, 최초 통과 2029년",
+        "V-05_option_c": "G 옵션(c) GM60 PASS(2030) 는 FAIL — 실제 41.1%, 제시 궤적에 통과 연도 없음",
+        "V-08_bias_check": "비관 방향 오류 2건 교정 시 SOM +21.7% 이나 게이트 판정 불변 — FAIL 은 편향이 아니라 시장 크기의 결과",
+        "gate_status": "SAM FAIL / SOM FAIL / Payback FAIL(신규 적발) / GM 조건부 / FTO PASS"
+      }
     },
     "X": {
       "role": "반증 레드팀",
