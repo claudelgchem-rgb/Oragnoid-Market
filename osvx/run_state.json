@@ -53,10 +53,33 @@
     },
     "C": {
       "role": "경쟁·공급자 랜드스케이프 & 가격",
-      "status": "pending",
-      "dod_passed": false,
+      "status": "done",
+      "dod_passed": true,
       "retries": 0,
-      "artifacts": []
+      "artifacts": [
+        "docs/C_plan.md",
+        "data/price_table.csv",
+        "docs/C_competition.md",
+        "evidence/evidence_C.jsonl"
+      ],
+      "web_calls": 140,
+      "evidence_count": 71,
+      "handoff": {
+        "asp_bme_usd_per_mL": 48.24,
+        "asp_defined_usd_per_mL": 60.47,
+        "asp_gmp_usd_per_mL": 117.43,
+        "definition_premium_ratio": 1.253,
+        "definition_premium_significant": false,
+        "p_value": 0.168,
+        "gmp_over_ruo_multiple": 1.942,
+        "top3_share_estimate": 0.78,
+        "distributor_markup_pct": 35.9,
+        "mtg_prior_commercial_exists": true,
+        "mtg_incumbent_usd_per_mL": 38.9,
+        "china_local_usd_per_mL": 21.3,
+        "gmp_matrix_public_price_count": 0,
+        "critical_warning": "101Bio Col-Tgel(콜라겐+mTG 2액형)이 이미 상용. 특허 신규성·차별화 재설계 필요."
+      }
     },
     "D": {
       "role": "고객 VOC·Pain Point·전환장벽",
