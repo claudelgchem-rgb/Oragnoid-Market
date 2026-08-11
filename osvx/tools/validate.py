@@ -312,13 +312,16 @@ def extra():
     body = [l for l in rows if not re.match(r"^\s*\|[\s\-:|]+\|\s*$", l)
             and "가정ID" not in l and "가정값" not in l
             and ASSUM_ID.match(l.split("|")[1].strip() if l.count("|") >= 2 else "")]
-    # 민감도 영향 = 마지막 열. 정량 서술(숫자·증감·조건부) 또는 명시적 영향 진술이 있으면 충족.
-    SENS = re.compile(r"(\d)|(민감|영향|리스크|변동|불변|무관|증가|감소|상승|하락|"
-                      r"이면|하면|경우|시나리오|배|년|%)")
+    # 민감도 영향 = 마지막 열. 키워드 매칭은 정당한 서술을 놓치므로(예: "FTO 판정이 중→상으로
+    # 바뀌고 즉시 No-Go 사유가 된다") 서술의 실질성으로 판정한다: 20자 이상이면 충족,
+    # "동상"·"해당없음" 같은 대체 표기나 절차 메모는 미충족.
+    STUB = re.compile(r"^(동상|상동|위와\s*같음|해당\s*없음|없음|N/?A|-)\s*$")
     nosens = []
     for l in body:
         cell = l.split("|")[-2].strip() if l.count("|") >= 3 else ""
-        if len(cell) < 10 or not SENS.search(cell):
+        cell = re.sub(r"[*`]", "", cell).strip()
+        # 충족 = 대체표기가 아니면서, 서술형(20자+) 이거나 정량형("SOM x 0.60", "±40% 시 $23~$54/mL")
+        if STUB.match(cell) or not (len(cell) >= 20 or re.search(r"\d", cell)):
             nosens.append(l)
     add("EXTRA", len(body) >= 8, "assumptions.md 가정 %d건 (최소 8)" % len(body))
     add("EXTRA", not nosens, "민감도 영향 미기재 가정 %d건" % len(nosens))

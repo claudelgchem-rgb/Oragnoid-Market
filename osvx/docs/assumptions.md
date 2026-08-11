@@ -23,14 +23,14 @@
 |---|---|---|---|
 | C-A2a | Corning Collagen I rat tail 354249 (100 mg): 농도 8-11 mg/mL 의 중간값 9.5 mg/mL 적용 → 10.53 mL | Corning 제품 페이지 명기 농도 범위 [E-110] | 하한 8 mg/mL 적용 시 12.5 mL($16.42/mL), 상한 11 적용 시 9.09 mL($22.58/mL). ±16% |
 | C-A2b | Laminin-521 계열 원액 농도는 업계 표준 **0.1 mg/mL** 로 통일 적용 (Gibco A29248 제품 슬러그 'fg-rh-laminin-521-0-1-mg-ml' 로 직접 확인, BioLamina LN521 제품 개요도 0.1 mg/mL 명기) | Fisher Scientific A29248 URL 및 Bio-Connect LN521 페이지 [E-147] | Gibco A29249 1 mg → 10 mL. Corning 354221 100 µg → 1 mL. 농도 2배 오차 시 해당 2행 USD/mL 2배 변동, 단 코팅시약이라 본 통계에서 제외되므로 결론 영향 0 |
-| C-A2c | iMatrix-511 350 µg = 175 µg × 2 vial, 0.5 mg/mL → 0.7 mL | Reprocell 제품 카탈로그의 '175 μg x 2 vials, 0.5 mg/mL in PBS' 표기 [E-117] | 코팅시약으로 본 통계 제외 |
+| C-A2c | iMatrix-511 350 µg = 175 µg × 2 vial, 0.5 mg/mL → 0.7 mL | Reprocell 제품 카탈로그의 '175 μg x 2 vials, 0.5 mg/mL in PBS' 표기 [E-117] | **낮음.** 코팅시약이라 정의성 프리미엄 통계에서 제외했다. 되돌려 포함시키면 fully-defined 중앙값이 64.93 → 67.14 USD/mL(+3.4%), BME 대비 비율 1.346 → 1.392 로만 움직인다(단가 840 USD/mL 가 분포 최상단 이상치라 중앙값을 거의 밀지 못함). 프리미엄 유의성 결론(p=0.168)은 불변. **단, 별건 확인 필요**: Agent O 재계산 시 코팅시약 제외 defined 중앙값이 64.93 으로 나와 Agent C 보고값 60.47 과 +4.46 USD/mL(+7.4%) 차이가 있다. 제외 집합 정의 차이로 보이며, definition_premium_ratio 가 1.253 이 아니라 1.346 일 수 있다. 프리미엄을 **키우는** 방향이나 유의성은 여전히 미달이므로 사업 판정에는 영향 없음 |
 
 ### C-A3. 키트형 제품의 최종 겔 부피
 | 가정ID | 가정값 | 근거 | 민감도 영향 |
 |---|---|---|---|
 | C-A3a | Cellendes 3-D Life 하이드로겔 키트 1개 = 최종 겔 **2.0 mL** (soft 기준) | Cellendes 제품 데이터시트/브로슈어: 'A standard kit allows formation of up to 2 ml 3-D Life Hydrogel depending on the stiffness of the gel (2 ml at soft, 1 ml at medium)' [E-148] | medium stiffness(1 mL) 적용 시 해당 3행 USD/mL 2배. fully-defined 중앙값 상향 → 정의성 프리미엄 **과대** 방향이므로 2.0 mL(보수적) 채택 |
 | C-A3b | Sigma TrueGel3D 키트 1개 = 최종 겔 **2.0 mL** (추정) | 제조사가 겔 수율을 공개하지 않음(제품페이지·기술문서·TRUE1 프로토콜 3개 소스 확인, 모두 미기재). 동급 PEG/덱스트란 2액형 연구용 키트인 Cellendes(2.0 mL, C-A3a)로부터 유추 | ±50% 오차 시 해당 1행 USD/mL $115.69~$347.08. 표본 33개 중 1개로 중앙값 영향 미미 |
-| C-A3c | Gelomics LunaGel Ultrapure GelMA High Stiffness 키트 = 최종 겔 **7.5 mL** | Gelomics 제품 사양: 'high stiffness kit contains enough LunaGel to create a total volume of 7.5mL hydrogel' [E-143] | 실측값이므로 가정 아님(기록 목적) |
+| C-A3c | Gelomics LunaGel Ultrapure GelMA High Stiffness 키트 = 최종 겔 **7.5 mL** | Gelomics 제품 사양: 'high stiffness kit contains enough LunaGel to create a total volume of 7.5mL hydrogel' [E-143] | **없음(영향 0).** 제조사 명시 실측값이라 추정 오차가 없다. 그럼에도 감도를 확인하면: 5 mL 로 잘못 잡으면 79.99 USD/mL, 10 mL 면 40.00 USD/mL 로 이 제품 단가가 2배 흔들리지만, semi-defined 군 중앙값은 세 경우 모두 **38.90 USD/mL 로 동일**하다(n=9 에서 이 제품이 중앙값 위치가 아님). 하위 산출물 어디에도 전파되지 않는다 |
 | C-A3d | denovoMATRIX screenMATRIX (5 × 96-well 프리코팅 플레이트) 의 매트릭스 등가 부피 = 5 × 96 × 50 µL = **24.0 mL** (수동 코팅 시 96-well 당 표준 코팅액 50 µL 기준) | 96-well 코팅 표준 작업량. 프리코팅 제품이라 실제 겔 부피는 존재하지 않으므로 '수동 코팅 대체 시 필요한 작업용액 부피'로 등가 환산 | 코팅액 30~100 µL/well 범위 적용 시 $12.50~$41.67/mL. fully-defined 하위값이라 중앙값 영향 제한적 |
 | C-A3e | Ectica 3DProSeed 96-well 플레이트 1매의 프리캐스트 하이드로겔 부피 = 96 × 10 µL = **0.96 mL** | 96-well 글래스바텀 이미징 플레이트의 프리캐스트 3D 겔은 통상 well 당 10 µL 수준. 제조사가 well 당 겔 부피를 비공개(제품페이지 확인, 'Contact us' 안내) | 5~20 µL/well 범위 시 0.48~1.92 mL/plate → USD/mL 2배 변동 |
 
@@ -40,7 +40,7 @@
 | 가정ID | 대상 | 추정값 | 회귀 근거 | 민감도 영향 |
 |---|---|---|---|---|
 | C-A4a | Manchester BIOGEL PeptiGel Alpha 5 mL | 추정 $275.00 (= $55.00/mL × 5 mL) | 자가조립 펩타이드 하이드로겔 실측 comparable 2건의 평균: Corning PuraMatrix $62.72/mL [E-122], Corning Synthegel 3D hiPSC $37.08/mL + Spheroid $43.26/mL [E-130][E-131] → 평균 $47.69/mL. 영국 소규모 제조사 프리미엄 +15% 적용 → $54.84 ≈ $55.00/mL | ±40% 시 $33~$77/mL. fully-defined 중앙값 부근이라 중앙값 이동 거의 없음 |
-| C-A4b | Biogelx-S (펩타이드, 동결건조 분말, 5 mL 겔 환산) | 추정 $275.00 (= $55.00/mL × 5 mL) | C-A4a 와 동일 아키텍처(합성 펩타이드 하이드로겔)로 동일 기준선 적용 | 동상 |
+| C-A4b | Biogelx-S (펩타이드, 동결건조 분말, 5 mL 겔 환산) | 추정 $275.00 (= $55.00/mL × 5 mL) | C-A4a 와 동일 아키텍처(합성 펩타이드 하이드로겔)로 동일 기준선 적용 | **낮음.** 단가를 ±50% 흔들어도(27.50 ~ 82.50 USD/mL) fully-defined 중앙값은 0.5×/0.75×/1.0× 에서 **64.93 USD/mL 로 불변**이고, 1.5× 이상에서만 69.82 로 +7.5% 이동한다(BME 대비 1.346 → 1.447). 즉 하방 오차는 결론에 전혀 전파되지 않고, 상방 오차는 프리미엄을 키우는 방향이라 "프리미엄 유의성 없음" 결론을 뒤집지 못한다. 이 제품은 defined 군 42개 중 1개(2.4% 가중)이며 Agent E 의 COGS·Agent A 의 ASP 어느 쪽에도 입력되지 않는다 |
 | C-A4c | QGel CN99 (5 mL) | 추정 $335.70 (= $67.14/mL × 5 mL) | Corning Matrigel for Organoid Culture $44.76/mL [E-102] 대비 1.5배. 근거: QGel 은 pharma 대상 fully-defined 오가노이드 전용 매트릭스로 BME 오가노이드 전용 라인 상위 포지셔닝. 1.5배는 Corning 자사 내 일반 Matrigel($30.29) → 오가노이드 전용($44.76) 상승폭 1.478배를 그대로 한 단계 더 적용한 것 | ±50% 시 $33.6~$100.7/mL |
 | C-A4d | Jellagen JellaGel 10 mL 키트 | 추정 $389.00 (= $38.90/mL × 10 mL) | 동일 제품 아키텍처(콜라겐 용액 + 버퍼 + 가교제 2~3액형 키트)의 유일한 실측 comparable 인 101Bio Col-Tgel 10 mL $389.00 [E-120] 을 1:1 적용 | ±40% 시 $23~$54/mL |
 | C-A4e | BioLamina Biolaminin 521 LN (LN521-02, 0.1 mg = 1 mL) | 추정 $118.00 (= $118.00/mL × 1 mL) | 동일 단백(재조합 인간 laminin-521) 실측 2건: Gibco A29249 $114.97/mL [E-116], Corning 354221 $81.01/mL [E-144]. 평균 $97.99 × 1.2 (BioLamina 는 laminin-521 원천 개발사·프리미엄 포지션) = $117.59 ≈ $118.00 | 코팅시약으로 본 통계 제외 → 결론 영향 0 |
