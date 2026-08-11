@@ -445,6 +445,6 @@ Thermo 가 Fisher 를 소유한 계열 내재화 구조이기 때문이며, 이 
 | 5 | mTG 기존 상용 제품 존재 여부 조사 완료 | **PASS** | **존재함** — 101Bio Col-Tgel, 콜라겐/젤라틴 + 트랜스글루타미나제 2액형, $38.90/mL, Fisher/AMSBIO/Gentaur 유통 [E-120]. 1차 문헌으로 가교 효소 확증 [E-164]. §7 에 차별화 약화 사실과 잔여 공간을 함께 기술 |
 | 6 | data/price_table.csv + docs/C_competition.md 생성 | **PASS** | 두 파일 모두 생성. 부수 산출: `docs/C_plan.md`, `evidence/evidence_C.jsonl`(71건, E-100~E-170), `docs/assumptions.md` append(C-A0~C-A5) |
 | 7 | 실제 WebSearch/WebFetch 40회 이상 | **PASS** | **약 140회** 수행 (검색 약 55회 + 페이지 fetch 약 85회). 전 가격은 실제 제품 페이지에서 확인, URL 날조 0건, 접근 실패 1건은 `access_status:"failed"` 로 기록 |
-| 8 | R1 No-Deferral 준수 | **PASS** | "추후 조사/향후 과제/TBD/범위를 벗어남" 0건. 미공개 가격 6건은 전부 회귀 추정 + 가정 등록으로 종결. `gaps.md` 신규 등재 없음(4요소 충족 항목 없음) |
+| 8 | R1 No-Deferral 준수 | **PASS** | AGENT_RULES §1 금지표현 목록 전 항목 출현 0건(스크립트 스캔 검증). 미공개 가격 6건은 전부 회귀 추정 + 가정 등록으로 종결. `gaps.md` 신규 등재 없음(4요소 충족 항목 없음) |
 | 9 | R2 Evidence 준수 | **PASS** | 근거 ID 전량 E-100~E-170 범위 내, `verified_by` 전건 `""`, `access_date` 전건 2026-08-11, JSONL 파싱 검증 통과 |
 | 10 | R5 Premise-Audit (사용자 전제 검증) | **PASS** | 전제 "defined 매트릭스는 프리미엄을 받는다" → **반증**(p=0.168). 전제 "mTG 가교가 차별화" → **부분 반증**(선행 상용품 존재). 두 건 모두 사업가설에 불리하나 그대로 보고 |

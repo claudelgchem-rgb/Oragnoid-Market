@@ -60,10 +60,28 @@
     },
     "D": {
       "role": "고객 VOC·Pain Point·전환장벽",
-      "status": "pending",
-      "dod_passed": false,
+      "status": "done",
+      "dod_passed": true,
       "retries": 0,
-      "artifacts": []
+      "artifacts": [
+        "docs/D_plan.md",
+        "docs/D_voc_barriers.md",
+        "evidence/evidence_D.jsonl"
+      ],
+      "web_calls": 103,
+      "evidence_count": 65,
+      "handoff": {
+        "switching_cost_usd_per_lab": 56810,
+        "switching_time_months": 12,
+        "segment_switch_propensity_pct": {
+          "학술": 6.0,
+          "제약전임상": 8.3,
+          "CRO": 2.7,
+          "임상진단": 3.2,
+          "GMP": 25.0
+        },
+        "critical_warning": "SAM은 Matrigel 잠식률이 아니라 증분 지출 수용률로 모델링할 것. 전환확률 미적용 시 초기 3년 매출 학술 16.7배·CRO 37배 과대평가."
+      }
     },
     "A": {
       "role": "수요·시장규모 TAM/SAM/SOM",

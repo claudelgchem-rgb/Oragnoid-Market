@@ -157,7 +157,7 @@ G'(c) = 9.1 × (c/3)^1.867
 **결정적 관찰 3가지:**
 
 1. **최상위 기관 사용자일수록 만족도가 높다.** MSKCC PDO 팀이 *"stable quality... repeatable"* 이라고 평가한다 [E-246]. lot 편차는 **경험 많은 랩에서는 이미 내부 프로세스(로트 사전시험·CoA 매칭)로 흡수되어 있다.** 즉 우리가 제거하겠다는 페인은 이미 고객이 **비용을 지불하고 관리 중**인 페인이며, 그 관리비용이 우리 제품 프리미엄의 상한선이다.
-2. **"Nothing can replace it that I know of"** [E-249] — 인식적 락인이 실제 기술적 격차보다 크다. 인지도 확보(논문·KOL) 없이는 스펙만으로 전환이 안 된다.
+2. **"Nothing can replace it that I know of"** [E-249] — 인식적 락인이 실제 기술적 격차보다 크다. 2025년 리뷰가 같은 현상을 학술적으로 서술한다: *"There is reluctance among scientists to switch to alternatives without robust evidence of their compatibility and effectiveness in organoid culture."* [E-235] 인지도 확보(논문·KOL) 없이는 스펙만으로 전환이 안 된다.
 3. **동종 BME 간 전환은 이미 '가격'만으로 발생한다** [E-253]. Cultrex UltiMatrix는 "성능 차이 없음 + 가격 이점"으로 채택되고 있고, Bio-Techne는 "20 로트 무실패" [E-255]로 **로트 일관성을 이미 마케팅 축으로 선점**했다. 우리 제품이 "로트 일관성"만 내세우면 **차별화 실패 + 가격 경쟁 진입**이다.
 
 ---
