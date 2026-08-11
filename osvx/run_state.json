@@ -227,10 +227,46 @@
     },
     "G": {
       "role": "사업모델·GTM·파트너십",
-      "status": "pending",
-      "dod_passed": false,
+      "status": "done",
+      "dod_passed": true,
       "retries": 0,
-      "artifacts": []
+      "artifacts": [
+        "docs/G_plan.md",
+        "docs/G_gtm.md",
+        "evidence/evidence_G.jsonl"
+      ],
+      "web_calls": 64,
+      "evidence_count": 65,
+      "handoff": {
+        "target_segment_rank1": "학술 RUO (점수 14.55, 2위 제약 6.10의 2.39배)",
+        "volume_192L_year_current_definition": 2042,
+        "bep_61.8L_year": 2034,
+        "anchor_30_total_L": 11.222,
+        "anchor_pct_of_gate": 5.13,
+        "required_discount_pct": {
+          "academic": 302.0,
+          "pharma": 461.7,
+          "cro": 98.6,
+          "clinical_dx": 550.6,
+          "gmp": 967.6
+        },
+        "max_feasible_discount_at_GM60": {
+          "500L": 72.2,
+          "100L": -23.7
+        },
+        "price_conversion_verdict": "양립 불가 — 가격으로 전환을 살 수 없음",
+        "service_offset_alternative": "랩당 9,851 USD 로 전환비용 56,810 의 99.6% 흡수, 레버리지 5.75배",
+        "reframe_option_rank1": "(b) 제품 정의 확장 — SAM 96.49M, SOM 8.67M/467.2L, 192L 를 2028년 통과",
+        "reframe_rank": [
+          "(b)제품정의확장",
+          "(c)비오가노이드포함",
+          "(e)GMP원부자재",
+          "(d)라이선싱",
+          "(a)게이트하향(-28.99M)"
+        ],
+        "neutral_distributor_count": 1,
+        "ma_target": "CollPlant EV 5~11M USD (런웨이 2026 Q4, 전략적 대안 검토 공식 개시)"
+      }
     },
     "R": {
       "role": "근거 신뢰도 독립 검증",
@@ -280,7 +316,8 @@
   "execution_note": "Workflow 툴 서브에이전트는 환경측 permission-handler 버그(updatedInput 스키마 위반, 92건 중 88건 실패)로 사용 불가 판정. Task(Agent) 서브에이전트로 전환하여 재실행.",
   "waves_done": [
     "W1",
-    "W2"
+    "W2",
+    "W3"
   ],
   "critical_collisions": [
     {

@@ -113,7 +113,7 @@ A 의 SOM              2030 = 21.6 L/년  (임계의 11.3%)
 ```
 
 ## 4. 준수 사항
-- R1: "추후/향후/범위 밖/TBD" 금지. 모르는 값은 조사 → 가정 → 계산 완료 후 `docs/assumptions.md` 에 `## [G]` 섹션으로 **append**.
+- R1: AGENT_RULES §1 의 금지표현 목록을 전부 회피한다(미정 표기 일체 금지). 모르는 값은 조사 → 가정 → 계산 완료 후 `docs/assumptions.md` 에 `## [G]` 섹션으로 **append**.
 - R2: 신규 근거는 **E-600~E-699** 만. `verified_by:""`, `access_date:"2026-08-11"`. URL 날조 금지, 실패는 `access_status:"failed"`.
 - R4: 전 파생수치 계산식 병기.
 - R5: 사용자 전제 검증 결과는 `docs/premise_audit.md` 에 `## [G]` append.
