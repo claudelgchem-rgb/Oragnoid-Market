@@ -1,0 +1,40 @@
+{
+  "project": "OSVX — Organoid Scaffold Viability eXplorer",
+  "orchestrator": "Agent O",
+  "workspace": "/home/user/Oragnoid-Market/osvx",
+  "started_utc": "2026-08-11",
+  "branch": "claude/clever-goodall-yb34w5",
+  "waves": {
+    "W1": ["B", "C", "D"],
+    "W2": ["A", "E", "F"],
+    "W3": ["G"],
+    "W4": ["R", "V", "X"],
+    "W5": ["S"],
+    "W6": ["W"],
+    "W7": ["GATE"]
+  },
+  "agents": {
+    "O": {"role": "오케스트레이터", "status": "running", "dod_passed": false, "retries": 0, "artifacts": ["osvx/AGENT_RULES.md", "osvx/run_state.json"]},
+    "B": {"role": "규제·정책 드라이버 & 제품등급", "status": "pending", "dod_passed": false, "retries": 0, "artifacts": []},
+    "C": {"role": "경쟁·공급자 랜드스케이프 & 가격", "status": "pending", "dod_passed": false, "retries": 0, "artifacts": []},
+    "D": {"role": "고객 VOC·Pain Point·전환장벽", "status": "pending", "dod_passed": false, "retries": 0, "artifacts": []},
+    "A": {"role": "수요·시장규모 TAM/SAM/SOM", "status": "pending", "dod_passed": false, "retries": 0, "artifacts": []},
+    "E": {"role": "원가·단위경제·수익성", "status": "pending", "dod_passed": false, "retries": 0, "artifacts": []},
+    "F": {"role": "IP/FTO/진입장벽", "status": "pending", "dod_passed": false, "retries": 0, "artifacts": []},
+    "G": {"role": "사업모델·GTM·파트너십", "status": "pending", "dod_passed": false, "retries": 0, "artifacts": []},
+    "R": {"role": "근거 신뢰도 독립 검증", "status": "pending", "dod_passed": false, "retries": 0, "artifacts": []},
+    "V": {"role": "내부 정합성·완결성 감사", "status": "pending", "dod_passed": false, "retries": 0, "artifacts": []},
+    "X": {"role": "반증 레드팀", "status": "pending", "dod_passed": false, "retries": 0, "artifacts": []},
+    "S": {"role": "통합 재무모델 & Go/No-Go", "status": "pending", "dod_passed": false, "retries": 0, "artifacts": []},
+    "W": {"role": "보고서 작성", "status": "pending", "dod_passed": false, "retries": 0, "artifacts": []}
+  },
+  "gates": {
+    "G1_산출물존재": "pending",
+    "G2_근거무결성": "pending",
+    "G3_금지표현": "pending",
+    "G4_숫자재현성": "pending",
+    "G5_삼각측량": "pending",
+    "G6_신뢰도분포": "pending",
+    "G7_판정존재": "pending"
+  }
+}
