@@ -199,10 +199,31 @@
     },
     "F": {
       "role": "IP/FTO/진입장벽",
-      "status": "pending",
-      "dod_passed": false,
+      "status": "done",
+      "dod_passed": true,
       "retries": 0,
-      "artifacts": []
+      "artifacts": [
+        "docs/F_plan.md",
+        "data/patent_table.csv",
+        "docs/F_ip_fto.md",
+        "evidence/evidence_F.jsonl"
+      ],
+      "web_calls": 115,
+      "evidence_count": 72,
+      "handoff": {
+        "fto_verdict": "중",
+        "gate_pass": true,
+        "blocking_patents_count": 3,
+        "key_expiry_years": [
+          2027,
+          2030,
+          2036
+        ],
+        "patents_reviewed": 52,
+        "novelty_verdict": "부분 가능 — 광의 조성물 불가, 협의 5개 포지션만",
+        "hard_constraint": "라미닌-111 무첨가 (EPFL US10934529 회피 조건 + E 의 원가 성립 조건과 동일)",
+        "organoid_ip_cliff": "2030-02-03 Clevers 기반특허 4개 관할 동시 만료"
+      }
     },
     "G": {
       "role": "사업모델·GTM·파트너십",
@@ -258,7 +279,8 @@
   },
   "execution_note": "Workflow 툴 서브에이전트는 환경측 permission-handler 버그(updatedInput 스키마 위반, 92건 중 88건 실패)로 사용 불가 판정. Task(Agent) 서브에이전트로 전환하여 재실행.",
   "waves_done": [
-    "W1"
+    "W1",
+    "W2"
   ],
   "critical_collisions": [
     {
