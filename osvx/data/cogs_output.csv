@@ -1,0 +1,237 @@
+section,key,value
+BOM,materials_usd_per_mL_A,0.1606
+BOM,materials_usd_per_mL_B1,4.7986
+BOM,materials_usd_per_mL_B2,92.9226
+COGS_100L_10mL,RUO_nolam_usd_per_mL,23.8631
+COGS_100L_10mL,RUO_nolam_usd_per_unit,238.63
+COGS_100L_10mL,GMP_nolam_usd_per_mL,48.5136
+COGS_100L_10mL,GMP_nolam_usd_per_unit,485.14
+COGS_100L_10mL,RUO_lam_int_usd_per_mL,29.4109
+COGS_100L_10mL,RUO_lam_int_usd_per_unit,294.11
+COGS_100L_10mL,RUO_lam_cat_usd_per_mL,134.8224
+COGS_100L_10mL,RUO_lam_cat_usd_per_unit,1348.22
+COGS_100L_10mL,gmp_over_ruo_cost_multiple,2.033
+UnitEcon_100L,RUO_1mL_cogs_per_unit,24.7
+UnitEcon_100L,RUO_1mL_cogs_per_mL,24.6956
+UnitEcon_100L,RUO_1mL_asp_per_mL,49.6
+UnitEcon_100L,RUO_1mL_gm_pct,50.21
+UnitEcon_100L,RUO_1mL_bep_L_per_year,40.25
+UnitEcon_100L,RUO_1mL_bep_revenue_usd,1996174.0
+UnitEcon_100L,RUO_5mL_cogs_per_unit,119.78
+UnitEcon_100L,RUO_5mL_cogs_per_mL,23.9556
+UnitEcon_100L,RUO_5mL_asp_per_mL,41.22
+UnitEcon_100L,RUO_5mL_gm_pct,41.88
+UnitEcon_100L,RUO_5mL_bep_L_per_year,47.86
+UnitEcon_100L,RUO_5mL_bep_revenue_usd,1972771.0
+UnitEcon_100L,RUO_10mL_cogs_per_unit,238.63
+UnitEcon_100L,RUO_10mL_cogs_per_mL,23.8631
+UnitEcon_100L,RUO_10mL_asp_per_mL,32.0
+UnitEcon_100L,RUO_10mL_gm_pct,25.43
+UnitEcon_100L,RUO_10mL_bep_L_per_year,61.84
+UnitEcon_100L,RUO_10mL_bep_revenue_usd,1978748.0
+UnitEcon_100L,GMP_1mL_cogs_per_unit,49.35
+UnitEcon_100L,GMP_1mL_cogs_per_mL,49.3461
+UnitEcon_100L,GMP_1mL_asp_per_mL,91.76
+UnitEcon_100L,GMP_1mL_gm_pct,46.22
+UnitEcon_100L,GMP_1mL_bep_L_per_year,42.59
+UnitEcon_100L,GMP_1mL_bep_revenue_usd,3907651.0
+UnitEcon_100L,GMP_5mL_cogs_per_unit,243.03
+UnitEcon_100L,GMP_5mL_cogs_per_mL,48.6061
+UnitEcon_100L,GMP_5mL_asp_per_mL,76.25
+UnitEcon_100L,GMP_5mL_gm_pct,36.25
+UnitEcon_100L,GMP_5mL_bep_L_per_year,51.0
+UnitEcon_100L,GMP_5mL_bep_revenue_usd,3889085.0
+UnitEcon_100L,GMP_10mL_cogs_per_unit,485.14
+UnitEcon_100L,GMP_10mL_cogs_per_mL,48.5136
+UnitEcon_100L,GMP_10mL_asp_per_mL,59.2
+UnitEcon_100L,GMP_10mL_gm_pct,18.05
+UnitEcon_100L,GMP_10mL_bep_L_per_year,65.98
+UnitEcon_100L,GMP_10mL_bep_revenue_usd,3906010.0
+UnitEcon_500L,RUO_1mL_cogs_per_unit,6.2
+UnitEcon_500L,RUO_1mL_cogs_per_mL,6.2009
+UnitEcon_500L,RUO_1mL_asp_per_mL,49.6
+UnitEcon_500L,RUO_1mL_gm_pct,87.5
+UnitEcon_500L,RUO_1mL_bep_L_per_year,40.25
+UnitEcon_500L,RUO_1mL_bep_revenue_usd,1996174.0
+UnitEcon_500L,RUO_5mL_cogs_per_unit,27.3
+UnitEcon_500L,RUO_5mL_cogs_per_mL,5.4609
+UnitEcon_500L,RUO_5mL_asp_per_mL,41.22
+UnitEcon_500L,RUO_5mL_gm_pct,86.75
+UnitEcon_500L,RUO_5mL_bep_L_per_year,47.86
+UnitEcon_500L,RUO_5mL_bep_revenue_usd,1972771.0
+UnitEcon_500L,RUO_10mL_cogs_per_unit,53.68
+UnitEcon_500L,RUO_10mL_cogs_per_mL,5.3684
+UnitEcon_500L,RUO_10mL_asp_per_mL,32.0
+UnitEcon_500L,RUO_10mL_gm_pct,83.22
+UnitEcon_500L,RUO_10mL_bep_L_per_year,61.84
+UnitEcon_500L,RUO_10mL_bep_revenue_usd,1978748.0
+UnitEcon_500L,GMP_1mL_cogs_per_unit,11.69
+UnitEcon_500L,GMP_1mL_cogs_per_mL,11.6915
+UnitEcon_500L,GMP_1mL_asp_per_mL,91.76
+UnitEcon_500L,GMP_1mL_gm_pct,87.26
+UnitEcon_500L,GMP_1mL_bep_L_per_year,42.59
+UnitEcon_500L,GMP_1mL_bep_revenue_usd,3907651.0
+UnitEcon_500L,GMP_5mL_cogs_per_unit,54.76
+UnitEcon_500L,GMP_5mL_cogs_per_mL,10.9515
+UnitEcon_500L,GMP_5mL_asp_per_mL,76.25
+UnitEcon_500L,GMP_5mL_gm_pct,85.64
+UnitEcon_500L,GMP_5mL_bep_L_per_year,51.0
+UnitEcon_500L,GMP_5mL_bep_revenue_usd,3889085.0
+UnitEcon_500L,GMP_10mL_cogs_per_unit,108.59
+UnitEcon_500L,GMP_10mL_cogs_per_mL,10.859
+UnitEcon_500L,GMP_10mL_asp_per_mL,59.2
+UnitEcon_500L,GMP_10mL_gm_pct,81.66
+UnitEcon_500L,GMP_10mL_bep_L_per_year,65.98
+UnitEcon_500L,GMP_10mL_bep_revenue_usd,3906010.0
+UnitEcon_500L,gmp_over_ruo_cost_multiple,2.0228
+ASP_scenarios,gm_pct_nolam_china_floor,-12.03
+ASP_scenarios,gm_pct_lam_internal_china_floor,-38.08
+ASP_scenarios,gm_pct_lam_catalog_china_floor,-532.97
+ASP_scenarios,gm_pct_nolam_base,25.43
+ASP_scenarios,gm_pct_lam_internal_base,8.09
+ASP_scenarios,gm_pct_lam_catalog_base,-321.32
+ASP_scenarios,gm_pct_nolam_coltgel_parity,38.66
+ASP_scenarios,gm_pct_lam_internal_coltgel_parity,24.39
+ASP_scenarios,gm_pct_lam_catalog_coltgel_parity,-246.59
+ASP_scenarios,gm_pct_nolam_matrigel_organoid,46.69
+ASP_scenarios,gm_pct_lam_internal_matrigel_organoid,34.29
+ASP_scenarios,gm_pct_lam_catalog_matrigel_organoid,-201.21
+ASP_scenarios,gm_pct_nolam_defined_median,60.54
+ASP_scenarios,gm_pct_lam_internal_defined_median,51.36
+ASP_scenarios,gm_pct_lam_catalog_defined_median,-122.96
+ASP_scenarios_500L,gm_pct_nolam_china_floor,74.8
+ASP_scenarios_500L,gm_pct_lam_internal_china_floor,48.75
+ASP_scenarios_500L,gm_pct_lam_catalog_china_floor,-446.14
+ASP_scenarios_500L,gm_pct_nolam_base,83.22
+ASP_scenarios_500L,gm_pct_lam_internal_base,65.89
+ASP_scenarios_500L,gm_pct_lam_catalog_base,-263.52
+ASP_scenarios_500L,gm_pct_nolam_coltgel_parity,86.2
+ASP_scenarios_500L,gm_pct_lam_internal_coltgel_parity,71.94
+ASP_scenarios_500L,gm_pct_lam_catalog_coltgel_parity,-199.04
+ASP_scenarios_500L,gm_pct_nolam_matrigel_organoid,88.01
+ASP_scenarios_500L,gm_pct_lam_internal_matrigel_organoid,75.61
+ASP_scenarios_500L,gm_pct_lam_catalog_matrigel_organoid,-159.89
+ASP_scenarios_500L,gm_pct_nolam_defined_median,91.12
+ASP_scenarios_500L,gm_pct_lam_internal_defined_median,81.95
+ASP_scenarios_500L,gm_pct_lam_catalog_defined_median,-92.37
+ScaleCurve_RUO,L1_cogs_per_mL,458.0497
+ScaleCurve_RUO,L1_fixed_per_mL,448.5646
+ScaleCurve_RUO,L1_gm_pct_at_32,-1331.41
+ScaleCurve_RUO,L10_cogs_per_mL,113.873
+ScaleCurve_RUO,L10_fixed_per_mL,111.7482
+ScaleCurve_RUO,L10_gm_pct_at_32,-255.85
+ScaleCurve_RUO,L100_cogs_per_mL,23.8631
+ScaleCurve_RUO,L100_fixed_per_mL,23.1184
+ScaleCurve_RUO,L100_gm_pct_at_32,25.43
+ScaleCurve_RUO,L1000_cogs_per_mL,5.2596
+ScaleCurve_RUO,L1000_fixed_per_mL,4.883
+ScaleCurve_RUO,L1000_gm_pct_at_32,83.56
+ScaleCurve_RUO,L250_cogs_per_mL,9.992
+ScaleCurve_RUO,L500_cogs_per_mL,5.3684
+ScaleCurve_RUO,min_volume_L_for_GM60,191.8
+Matrigel_compare,matrigel_cogs_usd_per_mL_est,32.704
+Matrigel_compare,matrigel_gm_pct_est,26.93
+Matrigel_compare,our_cogs_over_matrigel_ratio,0.73
+Sensitivity,① 콜라겐 단가 -50%,23.7886
+Sensitivity,① 콜라겐 단가 -50% | GM%,25.66
+Sensitivity,① 콜라겐 단가 +50%,23.9376
+Sensitivity,① 콜라겐 단가 +50% | GM%,25.19
+Sensitivity,② 수율 -30%,34.0505
+Sensitivity,② 수율 -30% | GM%,-6.41
+Sensitivity,② 수율 +30% (상한 99.5%),20.0646
+Sensitivity,② 수율 +30% (상한 99.5%) | GM%,37.3
+Sensitivity,③ ASP -30% (COGS 불변),23.8631
+Sensitivity,③ ASP -30% (COGS 불변) | GM%,-6.53
+Sensitivity,③ ASP +30% (COGS 불변),23.8631
+Sensitivity,③ ASP +30% (COGS 불변) | GM%,42.64
+Sensitivity,④ mTG 단가 -50%,23.8481
+Sensitivity,④ mTG 단가 -50% | GM%,25.47
+Sensitivity,④ mTG 단가 +50%,23.8781
+Sensitivity,④ mTG 단가 +50% | GM%,25.38
+Sensitivity,④' mTG = Zedira 카탈로그가,39.3881
+Sensitivity,④' mTG = Zedira 카탈로그가 | GM%,-23.09
+Sensitivity,④'' mTG = 식품급 순효소 등가,23.8335
+Sensitivity,④'' mTG = 식품급 순효소 등가 | GM%,25.52
+Sensitivity,⑤ 라미닌 포함 (내재화 23.19 USD/mg),29.4109
+Sensitivity,⑤ 라미닌 포함 (내재화 23.19 USD/mg) | GM%,8.09
+Sensitivity,⑤ 라미닌 포함 (벌크 46.38 USD/mg),34.9588
+Sensitivity,⑤ 라미닌 포함 (벌크 46.38 USD/mg) | GM%,-9.25
+Sensitivity,⑤ 라미닌 포함 (카탈로그 463.81),134.8224
+Sensitivity,⑤ 라미닌 포함 (카탈로그 463.81) | GM%,-321.32
+Sensitivity,⑥ 생산량 10 L/년,113.873
+Sensitivity,⑥ 생산량 10 L/년 | GM%,-255.85
+Sensitivity,⑥ 생산량 1000 L/년,5.2596
+Sensitivity,⑥ 생산량 1000 L/년 | GM%,83.56
+Sensitivity,⑦ 배합 OM-S soft (3 mg/mL),23.7915
+Sensitivity,⑦ 배합 OM-S soft (3 mg/mL) | GM%,25.65
+Sensitivity,⑦ 배합 OM-F firm (8 mg/mL),23.9825
+Sensitivity,⑦ 배합 OM-F firm (8 mg/mL) | GM%,25.05
+Sensitivity,⑧ 냉장체인 운임 COGS 내부화,25.4464
+Sensitivity,⑧ 냉장체인 운임 COGS 내부화 | GM%,20.48
+Sensitivity,laminin_breakeven_usd_per_mg_GM60_100L_asp32.00,0.0
+Sensitivity,laminin_breakeven_usd_per_mg_GM60_100L_asp38.90,0.0
+Sensitivity,laminin_breakeven_usd_per_mg_GM60_1000L_asp32.00,31.519
+Sensitivity,laminin_breakeven_usd_per_mg_GM60_1000L_asp38.90,43.056
+BEP,RUO 100L 10mL @32.00 | bep_L_per_year,61.84
+BEP,RUO 100L 10mL @32.00 | bep_revenue_usd,1978748.0
+BEP,RUO 100L 10mL @38.90 | bep_L_per_year,50.65
+BEP,RUO 100L 10mL @38.90 | bep_revenue_usd,1970421.0
+BEP,RUO 100L 10mL @21.30 | bep_L_per_year,94.02
+BEP,RUO 100L 10mL @21.30 | bep_revenue_usd,2002718.0
+BEP,RUO 100L 5mL  @32.00 | bep_L_per_year,47.86
+BEP,RUO 100L 5mL  @32.00 | bep_revenue_usd,1972771.0
+BEP,RUO 500L 10mL @32.00 | bep_L_per_year,61.84
+BEP,RUO 500L 10mL @32.00 | bep_revenue_usd,1978748.0
+BEP,RUO 1000L 10mL @32.00 | bep_L_per_year,129.09
+BEP,RUO 1000L 10mL @32.00 | bep_revenue_usd,4130772.0
+BEP,GMP 100L 10mL @59.20 | bep_L_per_year,65.98
+BEP,GMP 100L 10mL @59.20 | bep_revenue_usd,3906010.0
+BEP,RUO+라미닌(내재) @32.00 | bep_L_per_year,75.18
+BEP,RUO+라미닌(내재) @32.00 | bep_revenue_usd,2405775.0
+BEP,RUO+라미닌(카탈로그) @32.00 | bep_L_per_year,
+BEP,RUO+라미닌(카탈로그) @32.00 | bep_revenue_usd,
+CAPEX,capex_pilot_usd,3427000.0
+CAPEX,capex_commercial_add_usd,5094500.0
+CAPEX,capex_gmp_add_usd,5209500.0
+CAPEX,capex_total_usd,13731000.0
+CAPEX,gmp_cert_months_facility,24
+CAPEX,gmp_cert_months_to_first_lot,30
+Payback,2027_revenue_usd,1281635.0
+Payback,2027_cum_fcf_usd,-3471041.0
+Payback,2028_revenue_usd,3844904.0
+Payback,2028_cum_fcf_usd,-2594768.0
+Payback,2029_revenue_usd,8330626.0
+Payback,2029_cum_fcf_usd,-3535862.0
+Payback,2030_revenue_usd,16020435.0
+Payback,2030_cum_fcf_usd,1025989.0
+Payback,2031_revenue_usd,26241473.0
+Payback,2031_cum_fcf_usd,17856167.0
+Payback,2032_revenue_usd,33739037.0
+Payback,2032_cum_fcf_usd,40161578.0
+Payback,payback_year,2030
+Payback,payback_years_from_2026,4
+HANDOFF,design_volume_L_per_year,500
+HANDOFF,asp_base_usd_per_mL_10mL,32.0
+HANDOFF,cogs_usd_per_mL_ruo,5.368
+HANDOFF,cogs_usd_per_mL_gmp,10.859
+HANDOFF,cogs_usd_per_mL_ruo_ramp100L,23.863
+HANDOFF,cogs_usd_per_mL_gmp_ramp100L,48.514
+HANDOFF,gm_pct_1mL,87.5
+HANDOFF,gm_pct_5mL,86.8
+HANDOFF,gm_pct_10mL,83.2
+HANDOFF,gm_pct_1mL_ramp100L,50.2
+HANDOFF,gm_pct_5mL_ramp100L,41.9
+HANDOFF,gm_pct_10mL_ramp100L,25.4
+HANDOFF,min_volume_L_for_GM60,191.8
+HANDOFF,bep_volume_L_per_year,61.8
+HANDOFF,bep_revenue_usd,1978748.0
+HANDOFF,bep_volume_L_per_year_ramp100L,61.8
+HANDOFF,bep_revenue_usd_ramp100L,1978748.0
+HANDOFF,capex_pilot_usd,3427000.0
+HANDOFF,capex_total_usd,13731000.0
+HANDOFF,gmp_cert_months,24
+HANDOFF,gmp_over_ruo_cost_multiple_at_design,2.023
+HANDOFF,laminin_impact_usd_per_mL_internal,5.548
+HANDOFF,laminin_impact_usd_per_mL_catalog,110.959
+HANDOFF,laminin_conc_required_mg_per_mL,0.2
+HANDOFF,matrigel_cogs_usd_per_mL_est,32.704

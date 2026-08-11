@@ -138,10 +138,34 @@
     },
     "A": {
       "role": "수요·시장규모 TAM/SAM/SOM",
-      "status": "pending",
-      "dod_passed": false,
+      "status": "done",
+      "dod_passed": true,
       "retries": 0,
-      "artifacts": []
+      "artifacts": [
+        "docs/A_plan.md",
+        "docs/A_market_sizing.md",
+        "model/market_model.py",
+        "data/market_model_output.csv",
+        "evidence/evidence_A.jsonl"
+      ],
+      "web_calls": 128,
+      "evidence_count": 43,
+      "handoff": {
+        "path_adopted": "경로1 Bottom-up(주) + 경로3 Proxy(검증), 경로2 시장보고서 기각",
+        "TAM_2030_usd": 89200000,
+        "TAM_2030_L": 2708.5,
+        "TAM_2035_usd": 133150000,
+        "TAM_addressable_2030_usd": 50490000,
+        "SAM_naive_2030_usd": 50490000,
+        "SAM_adjusted_2030_usd": 10080000,
+        "SAM_adjusted_2035_usd": 26320000,
+        "SOM_2030_usd": 747000,
+        "SOM_2030_L": 21.6,
+        "SOM_2035_usd": 2024000,
+        "bull_SAM_2030": 29000000,
+        "bull_SOM_2030": 3920000,
+        "gate_result": "SAM_2030 FAIL(6.7% of 150M) / SOM_2030 FAIL(5.0% of 15M) — bull 시나리오도 미달"
+      }
     },
     "E": {
       "role": "원가·단위경제·수익성",
