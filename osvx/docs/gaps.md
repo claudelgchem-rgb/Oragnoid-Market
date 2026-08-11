@@ -155,3 +155,23 @@ Corning 은 Matrigel 생산량을 공개하지 않는다 — 가용성 업데이
   — 인용 기준 오가노이드 점유율 하한 28.8% [E-331]와 정합
 ```
 **본 갭은 결론에 영향을 주지 않는다.** 경로1 이 물량을 독립적으로 상향 산출하므로 경로3 물량은 검증용이며, ±19% 오차 내에서 경로1(1,178.7 L)과 경로3(3,215.8 L)의 스코프 차이 해석(오가노이드 = 전 용도의 36.7%)은 변하지 않는다.
+
+## [X] Agent X 미해결 항목 (2026-08-11)
+
+### GAP-X-01 — 중국 오가노이드 매트릭스 실판매가 (Beyotime·Yeasen 웹 정가 미공개)
+- ① 시도 쿼리 6개: `中国 类器官 基质胶 价格 国产 Matrigel 替代 2025 元/mL` / `类器官 基质胶 价格 1ml 元 碧云天 C0396 义翘 优宁维 报价` / `China organoid matrix suppliers 2025 domestic substitution` / Yeasen 제품페이지 / Beyotime C0396-1ml / Beyotime C0396-10ml
+- ② 확인 소스 8개: yeasen.com/products/detail/3514, beyotime.com/product/C0396-1ml.htm, m.beyotime.com/product/C0396-10ml.htm, m.beyotime.com/product/C0371-1ml.htm, m.beyotime.com/product/C0392-1ml.htm, medchemexpress.cn Meltrex, bio-review.com, mogengel.cn
+- ③ 부재 판단: 중국 시약사는 로그인·견적 기반 가격정책을 쓰며 공개 카탈로그 정가를 게시하지 않는다. Yeasen 페이지는 SKU 목록만, Beyotime 페이지는 가격 필드가 렌더링되지 않는다.
+- ④ 대체 추정치: Agent C 실측 Yeasen Ceturegel 40192ES **21.30 USD/mL** [E-125] 를 중국 가격 앵커로 사용. 오차범위 ±25% (Beyotime 50 mL 대용량 규격 존재 [E-718] 를 감안하면 하방 편향 가능 — 즉 실제 중국가는 21.30 보다 낮을 개연성이 크며, 이는 H5 를 **강화**하는 방향이다).
+
+### GAP-X-02 — 세포배양/GMP 등급 재조합 콜라겐의 공개 단가 (USD/g)
+- ① 시도 쿼리 5개: `GMP grade recombinant human collagen type III price per gram` / `recombinant humanized collagen 医用级 价格 每克` / `"recombinant collagen" GMP cell culture grade endotoxin price catalog Evonik OR Geltor OR Jellagen` / `recombinant human collagen type I cell culture grade catalog price VitroCol` / `recombinant collagen manufacturing cost per kilogram Pichia`
+- ② 확인 소스 9개: sigmaaldrich.com/US/en/product/sigma/5008, fishersci.com/shop/products/type-i-collagen-15-mg-lyotype-1/504875, advancedbiomatrix.com/vitrocol-lyophilized.html(403), evonik.com Vecollan, g-biotec.com, creative-enzymes.com, creativebiomart.net, winnermedical.com, humabiologics.com
+- ③ 부재 판단: 세포배양/GMP 등급 재조합 콜라겐은 전량 견적제이며(Evonik Vecollan·Geltor·Jellagen 모두 가격 비공개), Sigma·Fisher 는 로그인 후 계약가만 표시하고 VitroCol 15 mg 규격은 Fisher 채널에서 단종되었다. Agent C 의 `gmp_matrix_public_price_count = 0` [E-160] 과 동일한 구조적 원인이다.
+- ④ 대체 추정치: 세포배양 등급 하한 = Advanced BioMatrix PureCol **1,800 USD/g** [E-400, Agent E], 상한 = Humabiologics HumaDerm **8,702 USD/g** [E-401]. 본 문서 §7.3 은 하한 1,800 USD/g 을 최악 시나리오 입력으로 사용했다(GM 55.5%). 오차범위 1,800~8,702 USD/g (4.8배) — 상한 적용 시 GM 은 음수가 되므로 §7.4 의 f_6 = 0.700 은 보수적(사업에 유리한) 설정이다.
+
+### GAP-X-03 — Agent A 경로1 의 "오가노이드 지출 점유율" 실측치 부재
+- ① 시도 쿼리 5개: `organoids market size 2025 USD million Grand View Fortune MarketsandMarkets Mordor comparison` / `"basement membrane matrix" OR Matrigel market size 2024 2025 million QYResearch report` / `Matrigel publications trend 2020 2025` / NCBI esearch(matrigel AND <year>[dp]) / NCBI esearch(제품명별 전기간 인용)
+- ② 확인 소스 8개: techsciresearch.com/report/human-organoids-market/28070.html, marketresearchfuture.com/reports/organoids-spheroids-market-43190, straitsresearch.com/report/human-organoids-market, fortunebusinessinsights.com/human-organoids-market-115158, mordorintelligence.com/industry-reports/organoids-market, openpr.com/news/3968535 (QYResearch), reports.valuates.com/market-reports/QYRE-Auto-4W13526, eutils.ncbi.nlm.nih.gov
+- ③ 부재 판단: 조사한 어떤 시장보고서도 BME 의 **용도별 지출 분해**(오가노이드 vs invasion assay vs xenograft 동시주입 vs 2D 코팅)를 mL 또는 USD 단위로 제공하지 않는다. Agent A 가 사용한 논문 동시언급률 28.8% [E-331] 는 지출 대리변수로 검증된 바 없으며, 오가노이드는 상시 소비(93.6 mL/랩·년 [E-309])인 반면 invasion assay 는 일회성 소비이므로 언급률과 지출률은 체계적으로 괴리한다.
+- ④ 대체 추정치: 오가노이드 지출 점유율 **20~60%** (점추정 36.7% = Agent A 채택값). 이로 인해 TAM 2025 는 23.4~70.3 M USD, **SOM_2030 은 405,000~1,225,000 USD 의 ±1.8배 오차범위**를 갖는다. 상단(1,225,000 USD)조차 DECISION_GATE 15 M USD 의 8.2% 이므로 **의사결정 결론은 이 오차범위에 대해 강건하다**(X_redteam §10.3).

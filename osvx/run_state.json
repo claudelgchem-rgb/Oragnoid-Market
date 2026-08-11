@@ -357,10 +357,33 @@
     },
     "X": {
       "role": "반증 레드팀",
-      "status": "pending",
-      "dod_passed": false,
+      "status": "done",
+      "dod_passed": true,
       "retries": 0,
-      "artifacts": []
+      "artifacts": [
+        "docs/X_plan.md",
+        "docs/X_redteam.md",
+        "evidence/evidence_X.jsonl"
+      ],
+      "web_calls": 65,
+      "evidence_count": 51,
+      "handoff": {
+        "refutations": 12,
+        "bear_SOM_2030_usd": 314900,
+        "bear_SOM_2030_L": 9.1,
+        "bear_pct_of_base": 42.2,
+        "bear_pct_of_gate": 2.1,
+        "bottles_per_year_10mL": 910,
+        "failure_probability_pct": 88,
+        "failure_prob_range": "82~93",
+        "strongest_refutation": "H7 — mTG 는 천연 삼중나선 콜라겐을 가교하지 못함. 저온 유지 시 미가교, 변성 시 101Bio Col-Tgel 과 동일 제품. LG 의 유일 자산 GMP mTG 를 무효화.",
+        "h7_verdict": "현 제품정의에 대해 No-Go 정당화 성립. 옵션(d) 라이선싱·(e) GMP 원부자재에는 불성립.",
+        "gate_gap_multiple": 20.1,
+        "option_b_attack": "블렌디드 ASP 18.50 에서 GM60 임계는 347.3 L, 2028년 258.9 L 는 GM 47.7% FAIL",
+        "service_offset_attack": "FTE 총보상 190,781 USD(G/E 가정 90,000 의 2.12배) -> 랩당 18,249 USD, GM -36.8%",
+        "asp_reality": "G 제안가 32.00 은 Corning 표준 Matrigel 354234(30.29) 대비 +5.6% 프리미엄",
+        "kill_criteria_count": 5
+      }
     },
     "S": {
       "role": "통합 재무모델 & Go/No-Go",
@@ -390,7 +413,8 @@
   "waves_done": [
     "W1",
     "W2",
-    "W3"
+    "W3",
+    "W4"
   ],
   "critical_collisions": [
     {
@@ -419,6 +443,12 @@
       ],
       "issue": "101Bio Col-Tgel(콜라겐+mTG) 선행 상용 제품 존재 -> 신규성·차별화 재검토 필요.",
       "resolver": "Agent F"
+    }
+  ],
+  "open_discrepancies": [
+    {
+      "id": "DISC-01",
+      "issue": "옵션(b) GM60 임계물량: V=289.4 L, X=347.3 L (블렌디드 ASP 가정 차이 18.56 vs 18.50). 둘 다 192 L 초과·FAIL 결론 일치. Agent S 가 재계산해 하나로 확정할 것."
     }
   ]
 }
